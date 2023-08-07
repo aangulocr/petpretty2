@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetPretty Administration Profile</title>
+    <link rel="shortcut icon" href="./img/favicon-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-header">
+            <a href="#">
+                <img src="../img/logoBlancoSVG.svg" alt="Logo">
+            </a>
+        </div>
+
+        <nav class="menu">
+            <input type="checkbox" id="menu-checkbtn">
+            <label for="menu-checkbtn" class="menu-checklbl">
+                <img class="menu-icon" src="../img/bars-solid.svg" alt="menu hamburguesa">
+            </label>
+
+            <ul class="links">
+                <li> <a class="active" href="#">Doctor</a></li>
+                <li><a href="#patient">Patient</a></li>
+                <!-- menu de idiomas -->
+            
+                <li><a href="../index.html" target="_self">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main id="main">
+        <div class="content"> 
+            <h1>System Administrator</h1>
+            <figure class="admin-profile">
+                <img src="../img/drAvatar1.jpg" alt="">
+                <figcaption>Admin Profile</figcaption>
+            </figure>
+            <hr>
+            <section id="doctor">
+                <h2>Doctor Admin</h2>
+                <a href="#">
+                    <button class="btn_addNewDoctor">+ Add New Doctor</button>
+                </a>         
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Doctor Name</th>
+                                <th>Email</th>
+                                <th>Phone Number</th>
+                                <th>Events</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maria Brenes</td>
+                                <td>mbrenes1@yahoo.com</td>
+                                <td>1111-1111</td>
+                                <td>
+                                    <button class="btn_edit">Edit</button>
+                                    <button class="btn_view">View</button>
+                                    <button class="btn_remove">Remove</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Pedro Durán</td>
+                                <td>pedrod12@yahoo.com</td>
+                                <td>2222-2222</td>
+                                <td>
+                                    <button class="btn_edit">Edit</button>
+                                    <button class="btn_view">View</button>
+                                    <button class="btn_remove">Remove</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Carmen Fonseca</td>
+                                <td>cfonseca12@yahoo.com</td>
+                                <td>3333-3333</td>
+                                <td>
+                                    <button class="btn_edit">Edit</button>
+                                    <button class="btn_view">View</button>
+                                    <button class="btn_remove">Remove</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <hr>
+            <section id="patient">
+                <h2>Patient Admin</h2>
+                <a href="#">
+                    <button class="btn_addNewDoctor">+ Add New Patient</button>
+                </a>
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Patient Name</th>
+                                <th>Email</th>
+                                <th>Phone Number</th>
+                                <th>Events</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Luis Carmona</td>
+                                <td>lucarmona@yahoo.com</td>
+                                <td>4444-4444</td>
+                                <td>
+                                    <button class="btn_edit">Edit</button>
+                                    <button class="btn_view">View</button>
+                                    <button class="btn_remove">Remove</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Juana Canales</td>
+                                <td>testpatient@yahoo.com</td>
+                                <td>5555-5555</td>
+                                <td>
+                                    <button class="btn_edit">Edit</button>
+                                    <button class="btn_view">View</button>
+                                    <button class="btn_remove">Remove</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Fany Contreras</td>
+                                <td>contrerasfa@yahoo.com</td>
+                                <td>6666-6666</td>
+                                <td>
+                                    <button class="btn_edit">Edit</button>
+                                    <button class="btn_view">View</button>
+                                    <button class="btn_remove">Remove</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- **** FOOTER SECTION****-->
+    <hr>
+    <footer id="footer">
+        <figure class="footer-logo">
+            <img src="../img/logoBlancoSVG.svg" alt="logo compania">
+        </figure>
+        <section class="footer-contact">
+            <h4>CONTACT US</h4>
+            <ul class="footer-contact-data">
+                <li class="footer-address">
+                    <img src="../img/addressIcon-50.png" alt="home icon">
+                    <h5>Lorem Ipsum, GTE 102103, CR</h5>
+                </li>
+                <li class="footer-email">
+                    <img src="../img/mailIcon-50.png" alt="">
+                    loremIpsum@example.com
+                </li>
+                <li class="footer-phone">
+                    <img src="../img/phoneIcon-50.png" alt="">
+                    +0506 234 567 89
+                </li>
+            </ul>
+        </section>
+
+        <section class="footer-social">
+            <H4>FOLLOWS US</H4>
+            <ul class="social-networks">
+                <li>
+                    <img src="../img/facebook-48.png" alt="facebook logo">
+                    <a href="#">Facebook</a>    
+                </li>
+                <li>
+                    <img src="../img/whatsapp-48.png" alt="whatsapp logo">
+                    <a href="">WhatsApp</a>
+                </li>
+                <li>
+                    <img src="../img/youtube-48.png" alt="youtube logo">
+                    <a href="">YouTube</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="footer-company">
+            <H4>COMPANY</H4>
+            <nav class="footer-company-nav">
+                <a href="#">Home</a>
+                <a href="#ours">Mission</a>
+                <a href="#ours">Our Teams</a>
+                <a href="#services">Services</a>
+            </nav>
+        </section>
+
+    </footer>
+
+</body>
+
+</html>

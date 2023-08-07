@@ -1,0 +1,196 @@
+
+
+
+/* ******************************** */
+/*     Doctor profiles             */
+/* ******************************** */
+
+/* Home Doctor Profile */
+main{
+  margin: 15px;
+}
+
+.doctor-profile{
+  display: flex;
+  align-items: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 50;
+}
+
+.doctor-profile img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.doctor-profile figcaption{
+  font-size: .75rem;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  margin: 30px;
+  text-align: center;
+}
+
+.card{
+  border: 2px solid #e7e7e7;
+  border-radius: 4px;
+  padding: 1.5rem;
+  margin: auto;
+  grid-auto-flow: dense;
+  cursor: pointer;
+}
+
+/* Form  My Account DR Profile*/
+fieldset{
+    display: block;
+    padding: 10px 30px;
+    text-align: center;
+    width: 80%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin: auto;
+}
+
+fieldset legend{
+    text-align: left;
+    padding: 0 5px;
+}
+
+label{
+    text-align: start;
+}
+
+input[type=text], input[type=password], select {
+    width: 80%;
+    padding: 12px 8px;
+    margin: 8px;
+
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+  
+  input[type=submit] {
+    width: 10rem;
+    background-color: #4ad295;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px .75em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #4ad2fa;
+  }
+
+  .patient-appointment{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    text-align: left;
+  }
+
+  .patient-appointment label{
+    margin: 5px 10px 5px 0;
+  }
+
+  .patient-appointment input{
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+
+  /* --------------------------------------- */
+
+
+  /* Table My Appointments DR Profile */
+  /* Table My Session DR Profile  */
+  /* Table My Patients DR Profile  */
+
+#my-appointments table,
+#my-sessions table,
+#my-patients table{
+    width: 100%;
+    margin: auto;
+}
+
+#my-appointments th,
+#my-sessions th,
+#my-patients th{
+  background:#53575a;
+  color:#fff;
+  padding: 10px 20px;
+}
+
+#my-appointments td,
+#my-sessions td,
+#my-patients td{
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  padding: 10px 0;
+  align-self: center;
+}
+
+#my-appointments tr:nth-child(odd),
+#my-sessions tr:nth-child(odd),
+#my-patients tr:nth-child(odd){
+  background: #eee;
+}
+
+
+/******** MEDIA QUERY *******/
+@media (max-width: 800px) {
+    
+  /* Form Book Appointment */
+  /* Form  My Account */
+    .patient-appointment input {
+      margin: 10px 0;
+    }
+    
+    .patient-appointment {
+      flex-direction: column;
+      align-items: stretch;
+
+    }
+
+    .patient-appointment{
+      display: grid;
+      grid-template-columns: 1fr;
+      
+      text-align: left;
+    }
+
+  /* Appointment Reserved */
+  /* Result Examinations  */
+
+  table {
+      width:auto;
+      
+  }
+  thead {
+      display: none;
+  }
+ 
+  tr{
+    text-align: center;
+  }
+  tr td:first-child {
+      font-weight:bold;
+      font-size:1.3em;
+  }
+  tbody td {
+      /* display: block; */
+      display: flex;
+      width: 100%;
+      
+  }
+
+}  

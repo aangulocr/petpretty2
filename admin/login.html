@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetPretty Login</title>
+    <link rel="shortcut icon" href="./img/favicon-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/signin.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-header">
+            <a href="#">
+                <img src="../img/logoBlancoSVG.svg" alt="Logo">
+            </a>
+        </div>
+
+        <nav class="menu">
+            <input type="checkbox" id="menu-checkbtn">
+            <label for="menu-checkbtn" class="menu-checklbl">
+                <img class="menu-icon" src="../img/bars-solid.svg" alt="menu hamburguesa">
+            </label>
+
+            <ul class="links">
+                <li> <a class="active" href="../index.html">Home</a></li>
+                <li><a href="../index.html">Services</a></li>
+                <li><a href="../index.html">Blog</a></li>
+                <li><a href="../index.html">Ours</a></li>
+                <li><a href="../index.html">Gallery</a></li>
+                <li><a href="../index.html">News</a></li>
+                <li><a href="../index.html">Contact Us</a></li>
+
+                <!-- menu de idiomas -->
+                <section class="lang-menu">
+                    <div class="selected-lang">
+                        <img src="../img/webIcon-50.png" alt="icono web">
+                        <p>ENG</p>
+                    </div>
+
+                    <div class="selection-lang">
+                        <li>
+                            <a href="" target="_self" class="en">
+                                <figure>
+                                    <img src="../img/united-states.png" alt="icono web">
+                                    <figcaption>ENG</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" target="_self" class="es">
+                                <figure>
+                                    <img src="../img/spain.png">
+                                    <figcaption>ESP</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" target="_self"  class="fr">
+                                <figure> 
+                                    <img src="../img/france.png" alt="icono web">
+                                    <figcaption>FRE</figcaption>
+                                </figure>   
+                            </a>
+                        </li>
+                    </div>
+                </section>
+                <!-- Fin menu de idiomas -->
+                <li><a href="#">Login</a></li>
+                <li><a href="../admin/signup.html" target="_self">SignUp</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ***** MAIN ***** -->
+
+    <main id="main">
+        <div class="content">          
+            <!-- **** Form Login****-->
+            <section id="contact">
+
+                <h2>Login</h2><br>
+                <form>
+                    <fieldset>
+                    <legend>Welcome Back</legend><br>
+                      <label for="username">Username</label><br>
+                      <input type="text" id="username" name="username" placeholder="Username.." required><br>
+                  
+                      <label for="pass">Password</label><br>
+                      <input type="password" id="pass" name="pass" placeholder="Password.." required><br>
+                  
+                     <input type="submit" value="Submit">
+                     <p>Don't have an account? <a href="../admin/signup.html">SingUp</a></p>
+                    </fieldset>
+                    </form>
+            </section>
+        </div>
+    </main>
+
+     <!-- **** FOOTER SECTION****-->
+     <hr>
+     <footer id="footer">
+         <figure class="footer-logo">
+             <img src="../img/logoBlancoSVG.svg" alt="logo compania">
+         </figure>
+         <section class="footer-contact">
+             <h4>CONTACT US</h4>
+             <ul class="footer-contact-data">
+                 <li class="footer-address">
+                     <img src="../img/addressIcon-50.png" alt="home icon">
+                     <h5>Lorem Ipsum, GTE 102103, CR</h5>
+                 </li>
+                 <li class="footer-email">
+                     <img src="../img/mailIcon-50.png" alt="">
+                     loremIpsum@example.com
+                 </li>
+                 <li class="footer-phone">
+                     <img src="../img/phoneIcon-50.png" alt="">
+                     +0506 234 567 89
+                 </li>
+             </ul>
+         </section>
+ 
+         <section class="footer-social">
+             <H4>FOLLOWS US</H4>
+             <ul class="social-networks">
+                 <li>
+                     <img src="../img/facebook-48.png" alt="facebook logo">
+                     <a href="#">Facebook</a>    
+                 </li>
+                 <li>
+                     <img src="../img/whatsapp-48.png" alt="whatsapp logo">
+                     <a href="">WhatsApp</a>
+                 </li>
+                 <li>
+                     <img src="../img/youtube-48.png" alt="youtube logo">
+                     <a href="">YouTube</a>
+                 </li>
+             </ul>
+         </section>
+ 
+         <section class="footer-company">
+             <H4>COMPANY</H4>
+             <nav class="footer-company-nav">
+                 <a href="#">Home</a>
+                 <a href="#ours">Mission</a>
+                 <a href="#ours">Our Teams</a>
+                 <a href="#services">Services</a>
+             </nav>
+         </section>
+ 
+     </footer>
+</body>
+</html>

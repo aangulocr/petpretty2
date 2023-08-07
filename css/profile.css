@@ -1,0 +1,106 @@
+
+/* HEADER CSS FROM OTHER CSS = header.css*/
+/* FOOTER CSS FROM OTHER CSS = footer.css*/
+
+/* ADMIN HTML CSS */
+/*******************************
+        New Doctor section     
+********************************/
+#doctor{
+    margin:15px;
+}
+.admin-profile{
+    display: flex;
+    align-items: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 50;
+    margin: 20px;
+}
+
+.admin-profile img{
+    width: 50px;
+    height: 50px;
+}
+
+.btn_addNewDoctor{
+    padding: 5px;
+    background-color: #d62929;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 300;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.btn_addNewDoctor:hover{
+    transform: scale(1.1);
+}
+
+/* ******************************** */
+/*     Doctors profiles Table       */
+/* ******************************** */
+#doctor table,
+#patient table{
+    width: 100%;
+    /* margin: auto; */
+}
+
+#doctor th,
+#patient th{
+    background:#dd6622;
+    color:#fff;
+    padding: 10px 20px;
+}
+#doctor td,
+#patient td{
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding: 10px 0;
+    align-self: center;
+}
+
+#doctor tr:nth-child(odd),
+#patient tr:nth-child(odd){
+    background: #eee;
+}
+
+
+/*********************************
+Doctor Profile New Patient Section 
+**********************************/
+
+#patient{
+    margin: 20px;
+}
+
+
+
+
+/***********************************
+*********** MEDIA QUERY ************
+************************************/
+
+@media only screen and (max-width: 778px){
+
+
+    /* Responsive Table */
+
+    table {
+        width:300px;
+    }
+    thead {
+        display: none;
+    }
+   
+    tr td:first-child {
+        font-weight:bold;
+        font-size:1.3em;
+    }
+    tbody td {
+        /* display: block; */
+        display: flex;
+        width: 100%;
+        
+    }
+}
